@@ -1,7 +1,7 @@
-import {ISortable} from './ISortable';
+import {IBubbleSortable} from './IBubbleSortable';
 
 export class Sorter {
-    constructor(public collection: ISortable){}
+    constructor(public collection: IBubbleSortable){}
 
     sort() {
         for (let i = 0; i < this.collection.length; i++) {

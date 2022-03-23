@@ -1,6 +1,6 @@
-import { ISortable } from "../BubbleSort/ISortable";
+import { IBubbleSortable } from "../BubbleSort/IBubbleSortable";
 
-export class NumberCollection implements ISortable {
+export class NumberCollection implements IBubbleSortable {
     constructor(public data: number[]) {}
 
     compare(leftIndex: number, rightIndex: number): boolean {
