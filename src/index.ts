@@ -1,11 +1,7 @@
-export class Sorter {
-    constructor(public collection: number[]) {}
+import { Sorter } from "./BubbleSort/Sorter";
+import { NumberCollection } from "./Collections/NumbersCollection";
 
-    sort(): void {
-
-    }
-}
-
-const sorter = new Sorter([10, 3, -5, 0, 50]);
+const numberCollection = new NumberCollection([10,3,-5,0]);
+const sorter = new Sorter(numberCollection);
 sorter.sort();
-console.log(sorter.collection);
+console.log(numberCollection);
