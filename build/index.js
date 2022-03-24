@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Sorter_1 = require("./BubbleSort/Sorter");
-const NumbersCollection_1 = require("./Collections/NumbersCollection");
-const numberCollection = new NumbersCollection_1.NumberCollection([10, 3, -5, 0]);
-const sorter = new Sorter_1.Sorter(numberCollection);
+const BubbleSort_1 = require("./BubbleSort/BubbleSort");
+const StringCollection_1 = require("./Collections/StringCollection");
+// const numberCollection = new NumberCollection([1000,3,-5,0, -1]);
+const stringCollection = new StringCollection_1.StringCollection('xXaayb');
+const sorter = new BubbleSort_1.BubbleSort(stringCollection);
 sorter.sort();
-console.log(numberCollection);
+console.log(stringCollection.data);

@@ -1,6 +1,6 @@
 import {IBubbleSortable} from './IBubbleSortable';
 
-export class Sorter {
+export class BubbleSort {
     constructor(public collection: IBubbleSortable){}
 
     sort() {
