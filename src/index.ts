@@ -1,11 +1,9 @@
-export class Sorter {
-    constructor(public collection: number[]) {}
+import { BubbleSort } from "./BubbleSort/BubbleSort";
+import { NumberCollection } from "./Collections/NumbersCollection";
+import { StringCollection } from "./Collections/StringCollection";
 
-    sort(): void {
-
-    }
-}
-
-const sorter = new Sorter([10, 3, -5, 0, 50]);
+// const numberCollection = new NumberCollection([1000,3,-5,0, -1]);
+const stringCollection = new StringCollection('xXaayb');
+const sorter = new BubbleSort(stringCollection);
 sorter.sort();
-console.log(sorter.collection);
+console.log(stringCollection.data);

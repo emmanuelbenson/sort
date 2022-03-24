@@ -1,14 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Sorter = void 0;
-class Sorter {
-    constructor(collection) {
-        this.collection = collection;
-    }
-    sort() {
-    }
-}
-exports.Sorter = Sorter;
-const sorter = new Sorter([10, 3, -5, 0, 50]);
+const BubbleSort_1 = require("./BubbleSort/BubbleSort");
+const StringCollection_1 = require("./Collections/StringCollection");
+// const numberCollection = new NumberCollection([1000,3,-5,0, -1]);
+const stringCollection = new StringCollection_1.StringCollection('xXaayb');
+const sorter = new BubbleSort_1.BubbleSort(stringCollection);
 sorter.sort();
-console.log(sorter.collection);
+console.log(stringCollection.data);
