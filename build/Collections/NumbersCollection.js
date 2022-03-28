@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NumberCollection = void 0;
-class NumberCollection {
+const BubbleSort_1 = require("../BubbleSort/BubbleSort");
+class NumberCollection extends BubbleSort_1.BubbleSort {
     constructor(data) {
+        super();
         this.data = data;
     }
     compare(leftIndex, rightIndex) {

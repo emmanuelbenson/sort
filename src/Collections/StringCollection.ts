@@ -1,7 +1,10 @@
-import { IBubbleSortable } from "../BubbleSort/IBubbleSortable";
+import { BubbleSort } from "../BubbleSort/BubbleSort";
 
-export class StringCollection implements IBubbleSortable {
-    constructor(public data: string){}
+export class StringCollection extends BubbleSort {
+    
+    constructor(public data: string){
+        super();
+    }
 
     compare(leftIndex: number, rightIndex: number): boolean {
         return (
