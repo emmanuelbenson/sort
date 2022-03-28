@@ -1,4 +1,3 @@
-import {IBubbleSortable} from './IBubbleSortable';
 
 export abstract class BubbleSort {
     
